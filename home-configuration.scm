@@ -11,8 +11,7 @@
 	       #:use-module (gnu home)
 	       #:use-module (gnu home services shells)
 	       #:use-module (gnu packages)
-	       #:use-module (gnu services)
-	       #:use-module (guix gexp))
+	       #:use-module (gnu services))
 ;; personal modules
 ;;  #:use-module (home modules tmux))
 
@@ -34,23 +33,6 @@
 	   "nss-certs")))
   (services
     (list
-      (service
-	home-bash-service-type
-	(home-bash-configuration
-	  (aliases
-	    '(("grep='grep --color" . "auto")
-	      ("ll" . "ls -l")
-	      ("ls='ls -p --color" . "auto")))
-	  (bashrc
-	    (list
-	      (local-file
-		"/home/rlambert/src/guix-config/.bashrc"
-		"bashrc")))
-	  (bash-profile
-	    (list
-	      (local-file
-		"/home/rlambert/src/guix-config/.bash_profile"
-		"bash_profile")))))
       (service
 	home-fish-service-type
 	(home-fish-configuration
