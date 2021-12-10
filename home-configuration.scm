@@ -14,7 +14,7 @@
   #:use-module (gnu services)
   #:use-module (guix gexp)
   ;; personal modules
-  #:use-module (home modules tmux))
+;;  #:use-module (home modules tmux))
 
 (home-environment
   (packages
