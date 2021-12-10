@@ -8,12 +8,12 @@
 ;; export HISTFILE=$XDG_CACHE_HOME/.bash_history"))))
 
 (define-module (home environment)
-  #:use-module (gnu home)
-  #:use-module (gnu home services shells)
-  #:use-module (gnu packages)
-  #:use-module (gnu services)
-  #:use-module (guix gexp)
-  ;; personal modules
+	       #:use-module (gnu home)
+	       #:use-module (gnu home services shells)
+	       #:use-module (gnu packages)
+	       #:use-module (gnu services)
+	       #:use-module (guix gexp))
+;; personal modules
 ;;  #:use-module (home modules tmux))
 
 (home-environment
