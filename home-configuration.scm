@@ -11,7 +11,8 @@
 	       #:use-module (gnu home)
 	       #:use-module (gnu home services shells)
 	       #:use-module (gnu packages)
-	       #:use-module (gnu services))
+	       #:use-module (gnu services)
+	       #:use-module (guix gexp))
 ;; personal modules
 ;;  #:use-module (home modules tmux))
 
@@ -51,6 +52,6 @@
 	  (config
 	    (list
 	      (local-file
-		"config.fish"))
+		"files/config.fish"))
 	    ))
 	))))
