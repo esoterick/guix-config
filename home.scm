@@ -7,7 +7,7 @@
 ;;              (bash-profile '("\
 ;; export HISTFILE=$XDG_CACHE_HOME/.bash_history"))))
 
-(define-module (home environment)
+(define-module (home)
 	       #:use-module (gnu home)
 	       #:use-module (gnu home services shells)
 	       #:use-module (gnu packages)
@@ -16,7 +16,7 @@
 ;; personal modules
 ;;  #:use-module (home modules tmux))
 
-(home-environment
+(home
   (packages
     (map specification->package
 	 (list
