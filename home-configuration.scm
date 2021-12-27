@@ -56,7 +56,7 @@
    (simple-service 'fzf-env-vars
                    home-environment-variables-service-type
                    `(("FZF_COMPLETION_TRIGGER" . "~~")
-                     ("FZF_COMPLETION_OPTS" . "--border --info=inline")))
+                     ("FZF_COMPLETION_OPTS" . "--border")))
 
    (simple-service 'tmux-conf
                    home-files-service-type
