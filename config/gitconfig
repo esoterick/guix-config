@@ -144,7 +144,7 @@ editor = nvim
 [user]
 name = Robert J. Lambert III
 email = robert@digitalocean.com
-signingkey = D6BD58ABD86CC25D
+signingkey = 43130355AFDE0390
 
 [url "git@github.internal.digitalocean.com:"]
 insteadOf = git://github.internal.digitalocean.com/
