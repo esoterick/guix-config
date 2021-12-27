@@ -36,6 +36,7 @@
              (bashrc
               (list
                (local-file "config/bashrc")
+               (local-file "config/gpg.sh")
                (local-file "config/fzf/fzf.bash")))
              (guix-defaults? #t)))
    (simple-service 'env-vars
