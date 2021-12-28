@@ -19,6 +19,7 @@
                  "perl"
                  "pinentry-tty"
                  "neovim"
+                 "openconnect"
                  "openssl"
                  "ripgrep"
                  "sqlite"
